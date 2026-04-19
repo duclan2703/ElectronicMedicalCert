@@ -1,0 +1,52 @@
+1. @path\ElektronickePosudky_v2.0.5.json as a expert .NET software engineer, you will implement API contract based on this json file with these requirements:
+	Required technologies:
+	-	ASP.NET Core Web API (.NET 8)
+	-	Entity Framework Core (MS SQL)
+	-	AutoMapper
+	-	FluentValidation
+	-	MediatR (CQRS)
+	-	Serilog
+	-	Swashbuckle (Swagger)
+	-	xUnit + FluentAssertions
+	-	Microsoft.Extensions.Localization
+	Scope
+	Implement the following endpoints:
+
+	Codebooks:
+	-	GET /api/v2/ciselniky
+	-	GET /api/v2/ciselniky/{kod}/polozky
+
+	Driver medical certificates:
+	-	POST /api/v2/posudky/ridicskeOpravneni
+	-	GET /api/v2/posudky/ridicskeOpravneni/{id}
+	-	POST /api/v2/posudky/ridicskeOpravneni/vyhledat
+	-	GET /api/v2/posudky/ridicskeOpravneni/{id}/historie
+	-	PATCH /api/v2/posudky/ridicskeOpravneni/{id}/zneplatnit
+	-	GET /api/v2/posudky/ridicskeOpravneni/{id}/pdf
+	-	POST /api/v2/posudky/ridicskeOpravneni/zalozeni/opravneni
+	Functional Requirements
+	-	Follow API contract (routes, DTOs, status codes)
+	-	Support headers: X-Correlation-Id, Accept-Language, If-Match
+	-	Use Entity Framework Core with migrations and seed data
+	-	Implement CQRS using MediatR
+	-	Validate inputs using FluentValidation
+	-	Use AutoMapper for DTO mapping
+	-	Implement structured logging with Serilog
+	-	Provide Swagger documentation
+	-	Implement localization (EN + CZ)
+	-	Return ProblemDetails for errors
+	Business Logic
+	-	Codebooks listing and items retrieval
+	-	Create certificate with nested data
+	-	Retrieve certificate detail
+	-	Search with filtering, sorting, paging
+	-	Maintain certificate history
+	-	Invalidate certificate (state change, no delete)
+	-	Return PDF (can be generated placeholder)
+	-	Authorization check returning boolean
+
+2. Write Unit tests and integration tests for API contract that cover these requirements:
+	-	Unit tests (handlers, validation)
+	-	Integration tests (API endpoints)
+	-	Use xUnit and FluentAssertions
+
