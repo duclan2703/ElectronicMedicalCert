@@ -165,7 +165,9 @@ using (var scope = app.Services.CreateScope())
             db.Database.EnsureCreated();
         }
 
-        await DatabaseSeeder.SeedAsync(db);
+        var seedLogger = scope.ServiceProvider.GetRequiredService<ILogger<Program>>();
+        var enableTermxFetch = builder.Configuration.GetValue<bool?>("Termx:EnableFetch") ?? true;
+        await DatabaseSeeder.SeedAsync(db, seedLogger, enableTermxFetch);
     }
     catch (Exception ex)
     {

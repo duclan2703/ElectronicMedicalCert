@@ -13,7 +13,9 @@ internal static class TestDbFactory
             .Options;
 
         var db = new ElectronicMedicalCertDbContext(opts);
-        await DatabaseSeeder.SeedAsync(db);
+        var loggerFactory = Microsoft.Extensions.Logging.LoggerFactory.Create(builder => { });
+        var logger = loggerFactory.CreateLogger("TestDbFactory");
+        await DatabaseSeeder.SeedAsync(db, logger);
         return db;
     }
 }
