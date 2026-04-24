@@ -49,6 +49,7 @@ public sealed class InvalidatePosudekRoCommandHandler(IElectronicMedicalCertDbCo
         stub.RowVersion = newRowVersion;
 
         var entry = db.PosudkyRo.Entry(stub);
+        entry.Property(x => x.RowVersion).OriginalValue = current.RowVersion;
         entry.Property(x => x.StavPosudkuPolozkaId).IsModified = true;
         entry.Property(x => x.TypAkcePolozkaId).IsModified = true;
         entry.Property(x => x.RowVersion).IsModified = true;

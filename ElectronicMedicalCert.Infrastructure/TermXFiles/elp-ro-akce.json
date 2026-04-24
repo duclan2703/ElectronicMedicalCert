@@ -1,0 +1,55 @@
+{
+  "resourceType": "ValueSet",
+  "id": "elp-ro-akce--1.0.0",
+  "language": "cs",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/tools/StructureDefinition/web-source",
+      "valueUrl": "https://terminologie.ezdravi.gov.cz//fhir/ValueSet/elp-ro-akce"
+    }
+  ],
+  "url": "https://ncez.mzcr.cz/terminology/ValueSet/elp-ro-akce",
+  "version": "1.0.0",
+  "versionAlgorithmString": "semver",
+  "name": "ELP_RO_akce",
+  "title": "ELP řidičské oprávnění - akce",
+  "_title": {
+    "extension": [
+      {
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "en"
+          },
+          {
+            "url": "content",
+            "valueString": "Digital medical certificate - action"
+          }
+        ],
+        "url": "http://hl7.org/fhir/StructureDefinition/translation"
+      }
+    ]
+  },
+  "status": "active",
+  "experimental": false,
+  "publisher": "National eHealth center (NCEZ)",
+  "effectivePeriod": {
+    "start": "2025-12-18T00:00:00Z"
+  },
+  "compose": {
+    "inactive": false,
+    "include": [
+      {
+        "system": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+        "version": "1.0.0",
+        "filter": [
+          {
+            "property": "code",
+            "op": "regex",
+            "value": "akce_ro_.*"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -319,7 +319,15 @@ public sealed class ElectronicMedicalCertDbContext(DbContextOptions<ElectronicMe
             SeedItemTranslation(SeedIds.ItHarmon01, SeedIds.ItHarmon01TrCs, "cs", "01", null),
             SeedItemTranslation(SeedIds.ItHarmon01, SeedIds.ItHarmon01TrEn, "en", "01", null),
             SeedItemTranslation(SeedIds.ItNarod01, SeedIds.ItNarod01TrCs, "cs", "N01", null),
-            SeedItemTranslation(SeedIds.ItNarod01, SeedIds.ItNarod01TrEn, "en", "N01", null)
+            SeedItemTranslation(SeedIds.ItNarod01, SeedIds.ItNarod01TrEn, "en", "N01", null),
+            SeedItemTranslation(SeedIds.ItDruhProhlidkyPeriodicka, SeedIds.ItDruhProhlidkyPeriodickaTrCs, "cs", "Periodická prohlídka", null),
+            SeedItemTranslation(SeedIds.ItDruhProhlidkyPeriodicka, SeedIds.ItDruhProhlidkyPeriodickaTrEn, "en", "Periodic examination", null),
+            SeedItemTranslation(SeedIds.ItDruhProhlidkyMimoradna, SeedIds.ItDruhProhlidkyMimoradnaTrCs, "cs", "Mimořádná prohlídka", null),
+            SeedItemTranslation(SeedIds.ItDruhProhlidkyMimoradna, SeedIds.ItDruhProhlidkyMimoradnaTrEn, "en", "Extraordinary examination", null),
+            SeedItemTranslation(SeedIds.ItVysledekZpusobilySPodminkou, SeedIds.ItVysledekZpusobilySPodminkouTrCs, "cs", "Způsobilý s podmínkou", null),
+            SeedItemTranslation(SeedIds.ItVysledekZpusobilySPodminkou, SeedIds.ItVysledekZpusobilySPodminkouTrEn, "en", "Fit with condition", null),
+            SeedItemTranslation(SeedIds.ItSkupinaZadatelRidic2, SeedIds.ItSkupinaZadatelRidic2TrCs, "cs", "Skupina 2", null),
+            SeedItemTranslation(SeedIds.ItSkupinaZadatelRidic2, SeedIds.ItSkupinaZadatelRidic2TrEn, "en", "Group 2", null)
         );
     }
 

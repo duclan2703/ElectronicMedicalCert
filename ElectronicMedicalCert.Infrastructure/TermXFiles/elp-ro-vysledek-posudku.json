@@ -1,0 +1,55 @@
+{
+  "resourceType": "ValueSet",
+  "id": "elp-ro-vysledek-posudku--1.0.0",
+  "language": "cs",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/tools/StructureDefinition/web-source",
+      "valueUrl": "https://terminologie.ezdravi.gov.cz//fhir/ValueSet/elp-ro-vysledek-posudku"
+    }
+  ],
+  "url": "https://ncez.mzcr.cz/terminology/ValueSet/elp-ro-vysledek-posudku",
+  "version": "1.0.0",
+  "versionAlgorithmString": "semver",
+  "name": "ELP_RO_vysledek_posudku",
+  "title": "ELP řidičské oprávnění - výsledek posudku",
+  "_title": {
+    "extension": [
+      {
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "en"
+          },
+          {
+            "url": "content",
+            "valueString": "Digital medical certificate - driving licence - assessment result"
+          }
+        ],
+        "url": "http://hl7.org/fhir/StructureDefinition/translation"
+      }
+    ]
+  },
+  "status": "active",
+  "experimental": false,
+  "publisher": "National eHealth center (NCEZ)",
+  "effectivePeriod": {
+    "start": "2025-12-18T00:00:00Z"
+  },
+  "compose": {
+    "inactive": false,
+    "include": [
+      {
+        "system": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+        "version": "1.0.0",
+        "filter": [
+          {
+            "property": "code",
+            "op": "regex",
+            "value": "vysledek_posudku_ro_.*"
+          }
+        ]
+      }
+    ]
+  }
+}

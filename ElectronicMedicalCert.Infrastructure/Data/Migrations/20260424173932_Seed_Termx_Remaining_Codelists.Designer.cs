@@ -4,6 +4,7 @@ using ElectronicMedicalCert.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ElectronicMedicalCert.Infrastructure.Data.Migrations
 {
     [DbContext(typeof(ElectronicMedicalCertDbContext))]
-    partial class ElectronicMedicalCertDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260424173932_Seed_Termx_Remaining_Codelists")]
+    partial class Seed_Termx_Remaining_Codelists
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

@@ -1,0 +1,73 @@
+{
+  "resourceType": "ValueSet",
+  "id": "elp-ro-narodni-kody--1.0.0",
+  "language": "cs",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/tools/StructureDefinition/web-source",
+      "valueUrl": "https://terminologie.ezdravi.gov.cz//fhir/ValueSet/elp-ro-narodni-kody"
+    }
+  ],
+  "url": "https://ncez.mzcr.cz/terminology/ValueSet/elp-ro-narodni-kody",
+  "version": "1.0.0",
+  "versionAlgorithmString": "semver",
+  "name": "ELP_RO_narodni_kody",
+  "title": "ELP řidičské oprávnění - národní kódy",
+  "status": "active",
+  "experimental": false,
+  "publisher": "National eHealth center (NCEZ)",
+  "effectivePeriod": {
+    "start": "2025-12-18T00:00:00Z"
+  },
+  "compose": {
+    "inactive": false,
+    "include": [
+      {
+        "system": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+        "version": "1.0.0",
+        "concept": [
+          {
+            "code": "105",
+            "display": "105. Jiná zdravotní omezení, která nejsou uvedena v části I této přílohy"
+          },
+          {
+            "code": "111a",
+            "display": "111. Nelze vykonávat činnost: a) řidiče, který řídí motorové vozidlo v pracovněprávním vztahu a u něhož je řízení motorového vozidla druhem práce sjednaným v pracovní smlouvě"
+          },
+          {
+            "code": "111b",
+            "display": "111. Nelze vykonávat činnost: b) řidiče, u kterého je řízení motorového vozidla předmětem samostatné výdělečné činnosti prováděné podle jiného právního předpisu"
+          },
+          {
+            "code": "111c",
+            "display": "111. Nelze vykonávat činnost: c) učitele výcviku v řízení motorových vozidel podle jiného právního předpisu"
+          },
+          {
+            "code": "115",
+            "display": "115. Posilovač spojky"
+          },
+          {
+            "code": "160",
+            "display": "160. Výjimka z věku u řidičského oprávnění skupiny vozidel A1, A2 nebo A osoby, která je držitelem licence motoristického sportovce, udělená pouze pro jízdu při sportovní soutěži"
+          },
+          {
+            "code": "172",
+            "display": "172. Omezení řidičského oprávnění skupiny vozidel A pouze k řízení motorového vozíku pro invalidy"
+          },
+          {
+            "code": "175",
+            "display": "175. Omezení řidičského oprávnění skupiny vozidel D pouze k řízení vozidla městské hromadné dopravy osob"
+          },
+          {
+            "code": "185",
+            "display": "185. Pouze pro řízení motorových vozidel stanovených v § 83 odst. 5 zákona č. 361/2000 Sb. do doby dosažení věku u skupiny vozidel C 21 let, u skupiny vozidel D 24 let"
+          },
+          {
+            "code": "199",
+            "display": "199. Zkušební doba podmíněného upuštění od výkon"
+          }
+        ]
+      }
+    ]
+  }
+}

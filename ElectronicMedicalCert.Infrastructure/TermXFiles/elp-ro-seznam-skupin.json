@@ -1,0 +1,114 @@
+{
+  "resourceType": "ValueSet",
+  "id": "elp-ro-seznam-skupin--1.0.0",
+  "language": "cs",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/tools/StructureDefinition/web-source",
+      "valueUrl": "https://terminologie.ezdravi.gov.cz//fhir/ValueSet/elp-ro-seznam-skupin"
+    }
+  ],
+  "url": "https://ncez.mzcr.cz/terminology/ValueSet/elp-ro-seznam-skupin",
+  "version": "1.0.0",
+  "versionAlgorithmString": "semver",
+  "name": "ELP_RO_seznam_skupin",
+  "title": "ELP řidičské oprávnění - seznam skupin",
+  "_title": {
+    "extension": [
+      {
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "en"
+          },
+          {
+            "url": "content",
+            "valueString": "Digital medical certificate - driving licence - vehicle type"
+          }
+        ],
+        "url": "http://hl7.org/fhir/StructureDefinition/translation"
+      }
+    ]
+  },
+  "status": "active",
+  "experimental": false,
+  "publisher": "National eHealth center (NCEZ)",
+  "effectivePeriod": {
+    "start": "2025-12-18T00:00:00Z"
+  },
+  "compose": {
+    "inactive": false,
+    "include": [
+      {
+        "system": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+        "version": "1.0.0",
+        "concept": [
+          {
+            "code": "A",
+            "display": "skupina A"
+          },
+          {
+            "code": "A1",
+            "display": "skupina A1"
+          },
+          {
+            "code": "A2",
+            "display": "skupina A2"
+          },
+          {
+            "code": "AM",
+            "display": "skupina AM"
+          },
+          {
+            "code": "B",
+            "display": "skupina B"
+          },
+          {
+            "code": "B1",
+            "display": "skupina B1"
+          },
+          {
+            "code": "BE",
+            "display": "skupina BE"
+          },
+          {
+            "code": "C",
+            "display": "skupina C"
+          },
+          {
+            "code": "C1",
+            "display": "skupina C1"
+          },
+          {
+            "code": "C1E",
+            "display": "skupina C1E"
+          },
+          {
+            "code": "CE",
+            "display": "skupina CE"
+          },
+          {
+            "code": "D",
+            "display": "skupina D"
+          },
+          {
+            "code": "D1",
+            "display": "skupina D1"
+          },
+          {
+            "code": "D1E",
+            "display": "skupina D1E"
+          },
+          {
+            "code": "DE",
+            "display": "skupina DE"
+          },
+          {
+            "code": "T",
+            "display": "skupina T"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -92,5 +92,15 @@ internal static class SeedIds
     public static readonly Guid ItDruhProhlidkyMimoradna = Guid.Parse("80000000-0000-0000-0000-000000000007");
     public static readonly Guid ItVysledekZpusobilySPodminkou = Guid.Parse("80000000-0000-0000-0000-00000000000B");
     public static readonly Guid ItSkupinaZadatelRidic2 = Guid.Parse("80000000-0000-0000-0000-00000000000D");
+
+    // Translations for new items
+    public static readonly Guid ItDruhProhlidkyPeriodickaTrCs = Guid.Parse("90000000-0000-0000-0000-00000000000B");
+    public static readonly Guid ItDruhProhlidkyPeriodickaTrEn = Guid.Parse("90000000-0000-0000-0000-00000000000C");
+    public static readonly Guid ItDruhProhlidkyMimoradnaTrCs = Guid.Parse("90000000-0000-0000-0000-00000000000D");
+    public static readonly Guid ItDruhProhlidkyMimoradnaTrEn = Guid.Parse("90000000-0000-0000-0000-00000000000E");
+    public static readonly Guid ItVysledekZpusobilySPodminkouTrCs = Guid.Parse("90000000-0000-0000-0000-000000000015");
+    public static readonly Guid ItVysledekZpusobilySPodminkouTrEn = Guid.Parse("90000000-0000-0000-0000-000000000016");
+    public static readonly Guid ItSkupinaZadatelRidic2TrCs = Guid.Parse("90000000-0000-0000-0000-000000000019");
+    public static readonly Guid ItSkupinaZadatelRidic2TrEn = Guid.Parse("90000000-0000-0000-0000-00000000001A");
 }
 

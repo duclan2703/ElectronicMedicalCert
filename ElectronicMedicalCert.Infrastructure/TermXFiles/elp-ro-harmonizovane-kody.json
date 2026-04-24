@@ -1,0 +1,353 @@
+{
+  "resourceType": "ValueSet",
+  "id": "elp-ro-harmonizovane-kody--1.0.0",
+  "language": "cs",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/tools/StructureDefinition/web-source",
+      "valueUrl": "https://terminologie.ezdravi.gov.cz//fhir/ValueSet/elp-ro-harmonizovane-kody"
+    }
+  ],
+  "url": "https://ncez.mzcr.cz/terminology/ValueSet/elp-ro-harmonizovane-kody",
+  "version": "1.0.0",
+  "versionAlgorithmString": "semver",
+  "name": "ELP_RO_harmonizovane_kody",
+  "title": "ELP řidičské oprávnění - harmonizované kódy",
+  "status": "active",
+  "experimental": false,
+  "publisher": "National eHealth center (NCEZ)",
+  "effectivePeriod": {
+    "start": "2025-12-18T00:00:00Z"
+  },
+  "compose": {
+    "inactive": false,
+    "include": [
+      {
+        "system": "https://ncez.mzcr.cz/terminology/CodeSystem/elp-ro",
+        "version": "1.0.0",
+        "concept": [
+          {
+            "code": "01.01",
+            "display": "01.01 Brýle"
+          },
+          {
+            "code": "01.02",
+            "display": "01.02 Kontaktní čočky"
+          },
+          {
+            "code": "01.05",
+            "display": "01.05 Oční kryt"
+          },
+          {
+            "code": "01.06",
+            "display": "01.06 Brýle nebo kontaktní čočky"
+          },
+          {
+            "code": "01.07",
+            "display": "01.07 Specifické optické pomůcky"
+          },
+          {
+            "code": "02",
+            "display": "02. Sluchové pomůcky/komunikační pomůcky"
+          },
+          {
+            "code": "03.01",
+            "display": "03.01 Protéza/ortéza horní končetiny"
+          },
+          {
+            "code": "03.02",
+            "display": "03.02 Protéza/ortéza dolní končetiny"
+          },
+          {
+            "code": "10.02",
+            "display": "10.02 Automatická převodovka"
+          },
+          {
+            "code": "10.04",
+            "display": "10.04 Přizpůsobené ústrojí ovládání převodovky"
+          },
+          {
+            "code": "15.01",
+            "display": "15.01 Přizpůsobený pedál spojky"
+          },
+          {
+            "code": "15.02",
+            "display": "15.02 Ručně ovládaná spojka"
+          },
+          {
+            "code": "15.03",
+            "display": "15.03 Automatická spojka"
+          },
+          {
+            "code": "15.04",
+            "display": "15.04 Opatření proti zablokování nebo aktivaci pedálu spojky"
+          },
+          {
+            "code": "20.01 ",
+            "display": "20.01 Přizpůsobený brzdový pedál"
+          },
+          {
+            "code": "20.03 ",
+            "display": "20.03 Brzdový pedál upravený na levou nohu"
+          },
+          {
+            "code": "20.04 ",
+            "display": "20.04 Posuvný brzdový pedál"
+          },
+          {
+            "code": "20.05 ",
+            "display": "20.05 Sklopený brzdový pedál"
+          },
+          {
+            "code": "20.06",
+            "display": "20.06 Ručně ovládaná provozní brzda"
+          },
+          {
+            "code": "20.07 ",
+            "display": "20.07 Ovládání brzdy s použitím maximální síly ... N [například: 20.07(300 N)]"
+          },
+          {
+            "code": "20.09 ",
+            "display": "20.09 Přizpůsobená parkovací brzda"
+          },
+          {
+            "code": "20.12 ",
+            "display": "20.12 Opatření proti zablokování nebo aktivaci brzdového pedálu"
+          },
+          {
+            "code": "20.13 ",
+            "display": "20.13 Ovládání brzdy kolenem"
+          },
+          {
+            "code": "20.14 ",
+            "display": "20.14 Ovládání brzdového systému s podporou vnější síly"
+          },
+          {
+            "code": "25.01 ",
+            "display": "25.01 Přizpůsobený pedál akcelerátoru"
+          },
+          {
+            "code": "25.03 ",
+            "display": "25.03 Sklopený pedál akcelerátoru"
+          },
+          {
+            "code": "25.04 ",
+            "display": "25.04 Ručně ovládaný akcelerátor"
+          },
+          {
+            "code": "25.05 ",
+            "display": "25.05 Ovládání akcelerátoru kolenem"
+          },
+          {
+            "code": "25.06 ",
+            "display": "25.06 Ovládání akcelerátoru s podporou vnější síly"
+          },
+          {
+            "code": "25.08 ",
+            "display": "25.08 Pedál akcelerátoru nalevo"
+          },
+          {
+            "code": "25.09 ",
+            "display": "25.09 Opatření proti zablokování nebo aktivaci akcelerátoru"
+          },
+          {
+            "code": "31.01 ",
+            "display": "31.01 Další sada paralelních pedálů"
+          },
+          {
+            "code": "31.02 ",
+            "display": "31.02 Pedály ve stejné (nebo téměř stejné) úrovni"
+          },
+          {
+            "code": "31.03 ",
+            "display": "31.03 Opatření proti zablokování nebo aktivaci akcelerátoru a brzdových pedálů, pokud pedály nejsou ovládány nohou"
+          },
+          {
+            "code": "31.04 ",
+            "display": "31.04 Zvýšená podlaha"
+          },
+          {
+            "code": "32.01 ",
+            "display": "32.01 Akcelerátor a provozní brzda jako kombinovaný systém ovládaný jednou rukou"
+          },
+          {
+            "code": "32.02 ",
+            "display": "32.02 Akcelerátor a provozní brzda jako kombinovaný systém ovládaný vnější silou"
+          },
+          {
+            "code": "33.01 ",
+            "display": "33.01 Akcelerátor, provozní brzda a řízení jako kombinovaný systém ovládaný vnější silou jednou rukou"
+          },
+          {
+            "code": "33.02 ",
+            "display": "33.02 Akcelerátor, provozní brzda a řízení jako kombinovaný systém ovládaný vnější silou oběma rukama"
+          },
+          {
+            "code": "35.02 ",
+            "display": "35.02 Ovladače ovladatelné bez puštění zařízení pro řízení vozidla"
+          },
+          {
+            "code": "35.03 ",
+            "display": "35.03 Ovladače ovladatelné levou rukou bez puštění zařízení pro řízení vozidla"
+          },
+          {
+            "code": "35.04 ",
+            "display": "35.04 Ovladače ovladatelné pravou rukou bez puštění zařízení pro řízení vozidla"
+          },
+          {
+            "code": "35.05 ",
+            "display": "35.05 Ovladače ovladatelné bez puštění zařízení pro řízení vozidla a mechanismy akcelerátoru a brzd"
+          },
+          {
+            "code": "40.01 ",
+            "display": "40.01 Řízení s použitím maximální ovládací síly... N [například 40.01 (140 N)]"
+          },
+          {
+            "code": "40.05 ",
+            "display": "40.05 Přizpůsobený volant (větší nebo silnější volant, zmenšený průměr volantu, apod.) "
+          },
+          {
+            "code": "40.06 ",
+            "display": "40.06 Přizpůsobená poloha volantu"
+          },
+          {
+            "code": "40.09 ",
+            "display": "40.09 Nožní ovládání řízení"
+          },
+          {
+            "code": "40.11 ",
+            "display": "40.11 Pomocná zařízení na volantu"
+          },
+          {
+            "code": "40.14 ",
+            "display": "40.14 Alternativně přizpůsobený systém řízení vozidla ovládaný jednou rukou/paží"
+          },
+          {
+            "code": "40.15 ",
+            "display": "40.15 Alternativně přizpůsobený systém řízení vozidla ovládaný dvěma rukama/pažemi"
+          },
+          {
+            "code": "42.01 ",
+            "display": "42.01 Přizpůsobené zařízení pro výhled dozadu"
+          },
+          {
+            "code": "42.03 ",
+            "display": "42.03 Přídavné vnitřní zařízení umožňující výhled do stran"
+          },
+          {
+            "code": "42.05",
+            "display": "42.05 Zařízení k eliminaci mrtvého úhlu"
+          },
+          {
+            "code": "43.01 ",
+            "display": "43.01 Výška sedadla řidiče umožňující normální výhled a v normální vzdálenosti od  volantu a pedálů"
+          },
+          {
+            "code": "43.02 ",
+            "display": "43.02 Anatomicky přizpůsobené sedadlo řidiče"
+          },
+          {
+            "code": "43.03 ",
+            "display": "43.03 Sedadlo řidiče s postranní opěrou pro dobrou stabilitu"
+          },
+          {
+            "code": "43.04 ",
+            "display": "43.04 Sedadlo řidiče s opěrkou ruky"
+          },
+          {
+            "code": "43.06 ",
+            "display": "43.06 Přizpůsobení bezpečnostního pásu"
+          },
+          {
+            "code": "43.07 ",
+            "display": "43.07 Typ bezpečnostního pásu s podporou pro dobrou stabilitu"
+          },
+          {
+            "code": "44.01 ",
+            "display": "44.01 Samostatně ovládaná brzda"
+          },
+          {
+            "code": "44.02 ",
+            "display": "44.02 Přizpůsobená brzda na předním kole"
+          },
+          {
+            "code": "44.03 ",
+            "display": "44.03 Přizpůsobená brzda na zadním kole"
+          },
+          {
+            "code": "44.04 ",
+            "display": "44.04 Přizpůsobená rukojeť akcelerátoru"
+          },
+          {
+            "code": "44.08 ",
+            "display": "44.08 Výška sedadla umožňující řidiči v poloze vsedě mít současně obě nohy na zemi  a  udržovat  motocykl  v  rovnováze při  zastavení a stání"
+          },
+          {
+            "code": "44.09 ",
+            "display": "44.09 Maximální ovládací síla brzdy předního kola... N [například 44.09 (140 N)]"
+          },
+          {
+            "code": "44.10 ",
+            "display": "44.10 Maximální ovládací síla brzdy zadního kola... N [například 44.10 (240 N)]"
+          },
+          {
+            "code": "44.11 ",
+            "display": "44.11 Přizpůsobená stupačka"
+          },
+          {
+            "code": "44.12",
+            "display": "44.12 Přizpůsobená řídítka"
+          },
+          {
+            "code": "45",
+            "display": "45. Motocykl pouze s postranním vozíkem"
+          },
+          {
+            "code": "46",
+            "display": "46. Pouze pro tříkolová motorová vozidla"
+          },
+          {
+            "code": "47",
+            "display": "47. Pouze pro vozidla s více než dvěma koly, u kterých řidič nemusí pro rozjetí, zastavení a stání udržovat rovnováhu"
+          },
+          {
+            "code": "50",
+            "display": "50. Omezení na určité vozidlo/číslo podvozku (identifikační číslo vozidla, VIN)"
+          },
+          {
+            "code": "61",
+            "display": "61. Omezení jízdy podle denní doby (například: jedna hodina po východu slunce a jedna hodina před západem slunce)"
+          },
+          {
+            "code": "62",
+            "display": "62. Omezení jízdy v okruhu ... km od místa bydliště řidiče nebo pouze ve městě/regionu"
+          },
+          {
+            "code": "63",
+            "display": "63. Řízení vozidla bez cestujících"
+          },
+          {
+            "code": "64",
+            "display": "64. Jízda rychlostí nepřesahující ... km/h"
+          },
+          {
+            "code": "65",
+            "display": "65. Řízení vozidla povoleno výhradně v doprovodu jiného držitele řidičského oprávnění minimálně stejné skupiny vozidel"
+          },
+          {
+            "code": "66",
+            "display": "66. Bez přívěsu"
+          },
+          {
+            "code": "67",
+            "display": "67. Zákaz jízdy na dálnici"
+          },
+          {
+            "code": "78",
+            "display": "78. Pouze pro vozidla s automatickou převodovkou"
+          }
+        ]
+      }
+    ]
+  }
+}
