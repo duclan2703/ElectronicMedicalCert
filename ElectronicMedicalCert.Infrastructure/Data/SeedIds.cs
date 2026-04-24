@@ -87,5 +87,10 @@ internal static class SeedIds
     public static readonly Guid ItHarmon01TrEn = Guid.Parse("50000000-0000-0000-0000-00000000001C");
     public static readonly Guid ItNarod01TrCs = Guid.Parse("50000000-0000-0000-0000-00000000001D");
     public static readonly Guid ItNarod01TrEn = Guid.Parse("50000000-0000-0000-0000-00000000001E");
+
+    public static readonly Guid ItDruhProhlidkyPeriodicka = Guid.Parse("80000000-0000-0000-0000-000000000006");
+    public static readonly Guid ItDruhProhlidkyMimoradna = Guid.Parse("80000000-0000-0000-0000-000000000007");
+    public static readonly Guid ItVysledekZpusobilySPodminkou = Guid.Parse("80000000-0000-0000-0000-00000000000B");
+    public static readonly Guid ItSkupinaZadatelRidic2 = Guid.Parse("80000000-0000-0000-0000-00000000000D");
 }
 

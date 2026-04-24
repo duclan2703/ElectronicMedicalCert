@@ -18,17 +18,17 @@ public sealed class PosudkyRoHandlersTests
     {
         Rid = "RID-123",
         KrzpId = "KRZP-001",
-        TypAkce = new PosudekRoCiselnikPolozkaCreateDto { Kod = "VYTVORENI", Verze = "1" },
-        StavPosudku = new PosudekRoCiselnikPolozkaCreateDto { Kod = "PLATNY", Verze = "1" },
-        DruhProhlidky = new PosudekRoCiselnikPolozkaCreateDto { Kod = "VSTUPNI", Verze = "1" },
-        DruhPosudku = new PosudekRoCiselnikPolozkaCreateDto { Kod = "RO", Verze = "1" },
+        TypAkce = new PosudekRoCiselnikPolozkaCreateDto { Kod = "akce_ro_vytvoreni", Verze = "1" },
+        StavPosudku = new PosudekRoCiselnikPolozkaCreateDto { Kod = "stav_posudku_platny", Verze = "1" },
+        DruhProhlidky = new PosudekRoCiselnikPolozkaCreateDto { Kod = "druh_prohlidky_ro_vstupni", Verze = "1" },
+        DruhPosudku = new PosudekRoCiselnikPolozkaCreateDto { Kod = "druh_posudku_ro", Verze = "1" },
         DatumVystaveni = new DateOnly(2026, 1, 1),
         Zpusobilosti =
         {
             new PosudekRoZpusobilostCreateDto
             {
-                SkupinaZadateleRidic = new PosudekRoCiselnikPolozkaCreateDto { Kod = "RIDIC", Verze = "1" },
-                Vysledek = new PosudekRoCiselnikPolozkaCreateDto { Kod = "ZPUSOBILY", Verze = "1" },
+                SkupinaZadateleRidic = new PosudekRoCiselnikPolozkaCreateDto { Kod = "skupina_ro_1", Verze = "1" },
+                Vysledek = new PosudekRoCiselnikPolozkaCreateDto { Kod = "vysledek_posudku_ro_zpusobily", Verze = "1" },
                 SkupinyRidicskehoOpravneni =
                 {
                     new PosudekRoSkupinaCreateDto { SkupinaRo = new PosudekRoCiselnikPolozkaCreateDto { Kod = "B", Verze = "1" } }
@@ -160,7 +160,7 @@ public sealed class PosudkyRoHandlersTests
         var invalidateHandler = new InvalidatePosudekRoCommandHandler(db);
         var after = await invalidateHandler.Handle(new InvalidatePosudekRoCommand(id, before.VerzeZaznamu!), CancellationToken.None);
 
-        after.StavPosudku!.PolozkaKod.Should().Be("ZNEPLATNENY");
+        after.StavPosudku!.PolozkaKod.Should().Be("stav_posudku_zneplatneny");
 
         var historyHandler = new GetPosudekRoHistorieQueryHandler(db);
         var history = await historyHandler.Handle(new GetPosudekRoHistorieQuery(id), CancellationToken.None);

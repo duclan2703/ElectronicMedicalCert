@@ -30,13 +30,13 @@ public sealed class InvalidatePosudekRoCommandHandler(IElectronicMedicalCertDbCo
         }
 
         var lookup = new CodebookLookup(db);
-        var zneplatneny = await lookup.ResolveItem("stavPosudku", "STAV-POSUDKU", "ZNEPLATNENY", "1", cancellationToken);
+        var zneplatneny = await lookup.ResolveItem("stavPosudku", "STAV-POSUDKU", "stav_posudku_zneplatneny", "1", cancellationToken);
         if (current.StavPosudkuPolozkaId == zneplatneny.Id)
         {
             throw new ConflictException("Došlo ke konfliktu – posudek je již zneplatněn.");
         }
 
-        var akce = await lookup.ResolveItem("typAkce", "TYP-AKCE", "ZNEPLATNENI", "1", cancellationToken);
+        var akce = await lookup.ResolveItem("typAkce", "TYP-AKCE", "akce_ro_zneplatneni", "1", cancellationToken);
         var typOperace = await lookup.ResolveItem("typOperace", "TYP-OPERACE", "INVALIDATE", "1", cancellationToken);
 
         var newRowVersion = Guid.NewGuid().ToByteArray();

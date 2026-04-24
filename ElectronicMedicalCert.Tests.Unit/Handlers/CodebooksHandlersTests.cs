@@ -35,7 +35,7 @@ public sealed class CodebooksHandlersTests
         var items = await handler.Handle(new GetCodebookItemsQuery("STAV-POSUDKU"), CancellationToken.None);
 
         items.Should().NotBeNull();
-        items.Select(i => i.Kod).Should().Contain(new[] { "PLATNY", "ZNEPLATNENY" });
+        items.Select(i => i.Kod).Should().Contain(new[] { "stav_posudku_platny", "stav_posudku_zneplatneny" });
     }
 
     private sealed class FakeMapper : IMapper
